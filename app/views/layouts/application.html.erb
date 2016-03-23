@@ -24,11 +24,14 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
            <!--  nav here -->
+           <li><%= link_to "Sign up", new_user_path %></li>
+           <li><%= link_to "Sign in", signin_path %></li>
+           <li><%= link_to "Log Out", logout_path %></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </div>
-
+    <%= render '/layouts/messages' %>
     <!-- content -->
     <div class="container"  role="main">
       <%= yield %>
